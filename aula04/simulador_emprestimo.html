@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de emprestimo</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: large;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 28px solid rgb(189 189 189);
+            width: 50%;
+            padding: 2rem;
+        }
+        h1{
+            color: #ad1717;
+            margin-block-end: 5px;       
+        }
+        h2{
+            color: gray;
+            font-size: 1.8em;
+        }
+
+        form{
+            border: 1px solid black;
+            width: 86%;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <main id="container">
+        <h1>Seja bem-vindo(a) ao mybank</h1>
+        <h2>SIMULADOR DE EMPRÉSTIMO</h2>
+        <br>
+
+        <form action="simulador.php" method="POST">
+            <label for="nome">Nome:
+                <input type="text" name="nome" id="nome">
+            </label><br><br>
+            <label for="cliente">Já é nosso Cliente?
+                <input type="radio" name="opcao" id="opcao_sim" value="sim" > Sim
+                <input type="radio" name="opcao" id="opcao_nao" value="nao" checked> Não
+            </label><br><br>
+            <label for="score">Digite seu Serasa Score:
+                <input type="text" name="score" id="score">
+            </label><br><br>
+            <label for="emprestimo">Valor do Empréstimo:
+                <input type="number" name="emprestimo" id="emprestimo">
+            </label><br><br>
+            <label for="parcelas">Quantidades de Parcelas
+                <select name="parcelas" id="parcelas">
+                    <option value="">Nenhuma</option>
+                    <option value="parcela6">6</option>
+                    <option value="parcela12">12</option>
+                    <option value="parcela18">18</option>
+                    <option value="parcela24">24</option>
+                </select>
+            </label><br><br>
+            <input type="checkbox" name="seguro" id="seg_desemprego" value="seguro">
+            Desejo incluir seguro desemprego no valor de R$49,90 <br><br>
+
+            <input type="submit" value="Simular Emprestimo">
+        </form>
+    </main>
+
+    
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inserir Disciplina</title>
+</head>
+<body>
+    <h1 style="color: red;">Sistema Acadêmico</h1>
+    <h3>Nova Disciplina</h3>
+    <form action="disciplinas_gravar.php" method="POST">
+        <label for="descTurma">Disciplina: </label>
+        <input type="text" name="nome_disciplina">
+        <br><br>
+        <label for="carga_horaria">Carga Horaria: </label>
+        <input type="number" name="carga_horaria" id="carga_horaria">
+        <br><br>
+        <input type="submit" value="Gravar">
+    </form>
+</body>
+</html>

@@ -15,12 +15,11 @@ class Disciplina{
     }
 
     public function listar(){
-        $sql = "select * From tb_disciplinas";
+        $sql = "SELECT * FROM tb_disciplinas";
         $conexao = new PDO('mysql:host=127.0.0.1;dbname=sis-escolar','root','');
         $resultado = $conexao->query($sql);
         $lista = $resultado->fetchAll();
         return $lista;
     }
-
 }
 ?>

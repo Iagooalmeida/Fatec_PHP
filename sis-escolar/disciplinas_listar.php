@@ -1,4 +1,8 @@
 <?php
+
+//Verifica se o usuário tem SESSION no login
+require_once 'usuario-verifica.php';
+
 //Inclui o arquivo quem contém a classe Turma
 require_once "classes/Disciplina.php";
 

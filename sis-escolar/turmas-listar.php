@@ -1,30 +1,34 @@
 <?php
-//Inclui o arquivo quem contém a classe Turma
-require_once "classes/Turma.php";
+    //Verifica se o usuário está logado
+     require_once 'usuario-verifica.php';
 
-//Cria um novo objeto turma
-$turma = new Turma();
+    // Inclui o arquivo que contém a classe Turma
+    require_once "classes/Turma.php";
 
-//Chama o método "listar" e armazena o resultado em uma váriavel
-$lista = $turma->listar();
+    // Cria um novo objeto Turma
+    $turma = new Turma();
+
+    // Chama o método "listar" e armazena o resultado em uma variável
+    $lista = $turma->listar();
 ?>
 
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistema Acadêmico</title>
 </head>
 <body>
     <h1>Sistema Acadêmico</h1>
-    <h3>Lista Turmas</h3>
+    <h3>Listar Turmas</h3>
     <table border="1">
         <tr>
             <th>Código</th>
             <th>Turma</th>
             <th>Ano</th>
-            <th>Ação</th>
+            <th>Ações</th>
         </tr>
         <?php foreach ($lista as $linha): ?>
         <tr>
@@ -32,11 +36,13 @@ $lista = $turma->listar();
             <td><?php echo $linha['descTurma'] ?></td>
             <td><?php echo $linha['ano'] ?></td>
             <td>
-                <a href="#">Atualizar</a>
-                <a href="#">Excluir</a>
+                <a href="turmas-editar.php?id=<?= $linha['id'] ?>">Atualizar</a>
+                <a href="turmas-excluir.php?id=<?= $linha['id'] ?>">Excluir</a>
             </td>
         </tr>
         <?php endforeach ?>
     </table>
+    <br><br>
+    <a href="turmas-inserir.html">Nova Turma</a>
 </body>
 </html>

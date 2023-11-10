@@ -28,9 +28,9 @@
         <tr>
             <td><?php echo $linha['id'] ?></td>
             <td><img src="img/<?php echo $linha['foto']?>" height="60"></td>
-            <td><?php $linha['nome'] ?></td>
-            <td><?php $linha['email'] ?></td>
-            <td><?php $linha['descTurma'] ?></td>
+            <td><?php echo $linha['nome'] ?></td>
+            <td><?php echo $linha['email'] ?></td>
+            <td><?php echo $linha['descTurma'] ?></td>
             <td>
                 <a href="#">Atualizar</a>
                 <a href="#">Excluir</a>

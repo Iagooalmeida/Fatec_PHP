@@ -1,0 +1,92 @@
+[
+    {
+        "nome": "João",
+        "turma": "1º DSM",
+        "disciplinas": [
+            {
+                "nome": "Lógica de Programação",
+                "professor": "Júnior"
+            },
+            {
+                "nome": "Desenvolvimento Web I",
+                "professor": "Tiago"
+            }
+        ]
+    },
+    {
+        "nome": "Maria",
+        "turma": "2º DSM",
+        "disciplinas": [
+            {
+                "nome": "Banco de Dados",
+                "professor": "Júnior"
+            },
+            {
+                "nome": "Desenvolvimento Web II",
+                "professor": "Reginaldo"
+            },
+            {
+                "nome": "Engenharia de Software II",
+                "professor": "Ana Célia"
+            }
+        ]
+    },
+    {
+        "nome": "Pedro",
+        "turma": "3º DSM",
+        "disciplinas": [
+            {
+                "nome": "Técnicas de Programação II",
+                "professor": "Júnior"
+            },
+            {
+                "nome": "Banco de Dados ",
+                "professor": "Tiago"
+            }
+        ]
+    },
+    {
+        "nome": "Rafael",
+        "turma": "3º DSM",
+        "disciplinas":[
+            {
+                "nome": "Banco de Dados não Relacional",
+                "professor": "Mateus"
+            },
+            {
+                "nome": "Engenharia de Software II",
+                "professor":"Ana Célia"
+            },
+            {
+                "nome": "Banco de Dados ",
+                "professor": "Tiago"
+            },
+            {
+                "nome": "Interação humano computador",
+                "professor": "Ana Célia"
+            }
+        ]
+    },
+    {
+        "nome": "Luis",
+        "turma": "4º DSM",
+        "disciplinas":[
+            {
+                "nome": "Redes e hardware",
+                "professor": "Miyagi"
+            },
+            {
+                "nome": "Engenharia de Software II",
+                "professor":"Ana Célia"
+            },
+            {
+                "nome": "Técnicas de Programação II",
+                "professor": "Júnior"
+            },
+            {
+                "nome": "Interação humano computador",
+                "professor": "Tiago"
+            }
+        ]
+    }
+]

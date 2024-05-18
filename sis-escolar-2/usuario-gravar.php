@@ -5,7 +5,7 @@ try{
     //Gera um hash SHA-256 da senha recebido pelo formulário
     $senha = hash("sha256", $_POST["senha"]);
 
-    $now = new DataTime();
+    $now = new DateTime();
     $date = $now->format('d-m-Y');
 
     $sql = "INSERT INTO tb_usuarios (usuario, senha, datacad)
